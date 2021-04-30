@@ -12,6 +12,110 @@
         "symbol": "INDEX",
         "decimals": 18
       }
+    },
+    {
+      "name": "uniswap",
+      "params": {
+        "address": "0x0954906da0Bf32d5479e25f46056d22f08464cab",
+        "symbol": "INDEX (Uniswap)",
+        "decimals": 18
+      }
+    },
+    {
+      "name": "masterchef",
+      "params": {
+        "_comment_": "NOTE: this strategy only supports 1 pool in masterchef. If you need better support, contact @0xKiwi",
+        "address": "0x0954906da0Bf32d5479e25f46056d22f08464cab",
+        "symbol": "INDEX (Masterchef)"
+      }
+    },
+    {
+      "name": "sushiswap",
+      "params": {
+        "address": "0x0954906da0Bf32d5479e25f46056d22f08464cab",
+        "symbol": "INDEX (Sushiswap)"
+      }
+    },
+    {
+      "name": "contract-call",
+      "params": {
+        "address": "0x8f06FBA4684B5E0988F215a47775Bb611Af0F986",
+        "symbol": "INDEX (Unclaimed in DPI farm)",
+        "decimals": 18,
+        "methodABI": {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name":  "account",
+              "type": "address"
+            }
+          ],
+          "name": "earned",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name":"",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      }
+    },
+    {
+      "name": "contract-call",
+      "params": {
+        "address": "0xB93b505Ed567982E2b6756177ddD23ab5745f309",
+        "symbol": "INDEX (Unclaimed in DPI farm)",
+        "decimals": 18,
+        "methodABI": {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name":  "account",
+              "type": "address"
+            }
+          ],
+          "name": "earned",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name":"",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      }
+    },
+    {
+      "name": "contract-call",
+      "params": {
+        "address": "0x5bC4249641B4bf4E37EF513F3Fa5C63ECAB34881",
+        "symbol": "INDEX (Unclaimed in MVI farm)",
+        "decimals": 18,
+        "methodABI": {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name":  "account",
+              "type": "address"
+            }
+          ],
+          "name": "earned",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name":"",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      }
     }
   ],
   "members": [
@@ -19,10 +123,14 @@
     "0xB0Ff82C91178f66aA40224Abd425E2AC7AE28ceA",
     "0xDefb844D4529c0F61bb1ee6a0d889058D66BB962",
     "0x58430C50EAa0b399C2A228B9d28270C5C8Fe09A5",
-    "0xc95Fdee19b74bc9588F4888fB0762E83cfEF5d45"
+    "0xc95Fdee19b74bc9588F4888fB0762E83cfEF5d45",
+    "0x6d428208a3be587b914f8047851bcd561e0c6735"
   ],
   "filters": {
-    "defaultTab": "all",
-    "minScore": 0
+    "defaultTab": "core",
+    "minScore": 0,
+    "invalids": [
+      "QmQ2s6DsA2jc7ops9BC2KzQwo4rYZLYavisLJvLihpTGvH"
+    ]
   }
 }
